@@ -1,0 +1,177 @@
+---
+---
+@import "bootstrap";
+
+.jumbotron {
+  background: url(../img/splash.jpg);
+  background-size: cover;
+  color: white;
+  margin-top: 50px;
+  z-index: -1;
+}
+
+h1,h2,h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+p {
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.spacing {
+  letter-spacing: 5px;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar-inverse {
+  height: 55px;
+}
+
+.navbar-inverse btn > li> a {
+  text-align: center;
+}
+
+.container {
+  padding: 10px;
+}
+
+footer {
+  background-color: #dbdbdb;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-inverse {
+  background-color: black;
+  color: white;
+  box-shadow: 5px;
+}
+
+.navbar-inverse .navbar-nav li>a {
+
+}
+
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.icons {
+  width: 30px;
+  padding-right: 5px;
+}
+
+.blog {
+  margin-top: 100px;
+  min-height: 100vh;
+}
+
+.btn-nav {
+  background-color: black;
+  border: none;
+  text-decoration: none;
+  padding: 17px 18px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.btn-nav:hover, .btn-nav:active:focus{
+  background-color: grey;
+
+}
+
+.btn-nav {
+    position: relative;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-nav:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all .25s
+}
+
+.btn-nav:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.navbar-inverse .open .dropdown-menu {
+  background-color: #efefef;
+  margin-top: -3px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 0px;
+  text-shadow: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.navbar-inverse .open .dropdown-menu li>a {
+  padding: 10px 10px;
+}
+
+@media (max-width: 426px) {
+  main {
+    margin-top: 0px;
+  }
+}

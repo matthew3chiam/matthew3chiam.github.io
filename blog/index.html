@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+
+<div class="container">
+  <div class= "text-center col-lg-12 col-md-12 col-sm-12 blog">
+    <h3 style = "letter-spacing: 5px;">BLOG</h3><br><br>
+    {% for post in site.posts %}
+    		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+    {% endfor %}
+    <br><br><p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+
+</div>
