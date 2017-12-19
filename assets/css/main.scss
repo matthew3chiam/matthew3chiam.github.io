@@ -53,6 +53,10 @@ body {
   text-align: center;
 }
 
+button {
+  color: white;
+}
+
 .container {
   padding: 10px;
 }
@@ -120,7 +124,6 @@ img {
 
 .btn-nav:hover, .btn-nav:active:focus{
   background-color: grey;
-
 }
 
 .btn-nav {
@@ -170,8 +173,12 @@ img {
   padding: 10px 10px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 576px) {
   main {
-    margin-top: 0px;
+    margin-top: 50px;
+  }
+
+  .navbar-inverse {
+    height: 110px;
   }
 }
